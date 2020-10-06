@@ -1,1 +1,1 @@
-{"features":1,"ignored":0,"efficiency":0.3792170909090909,"failures":{"src.test.java.feature.UserdetailsAuthenticationCall":"-unknown-:5 - net.minidev.json.parser.ParseException: Unexpected character (=) at position 9."},"totalTime":1459.9858,"threads":1,"scenarios":1,"failed":1,"passed":0,"version":"0.9.6","elapsedTime":3850.0}
+{"features":0,"ignored":0,"efficiency":0.0,"failures":null,"totalTime":0.0,"threads":5,"scenarios":0,"failed":0,"passed":0,"version":"0.9.6","elapsedTime":2785.0}

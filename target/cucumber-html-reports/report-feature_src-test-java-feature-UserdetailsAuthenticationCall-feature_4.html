@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports  - Feature: src/test/java/feature/userdetails.feature</title>
+<title>Cucumber Reports  - Feature: src/test/java/feature/UserdetailsAuthenticationCall.feature</title>
 
 </head>
 <body>
@@ -127,20 +127,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">src/test/java/feature/userdetails.feature</td>
-                    <td      class="passed"    >4</td>
-          <td >0</td>
-          <td >0</td>
+          <td class="tagname">src/test/java/feature/UserdetailsAuthenticationCall.feature</td>
+                    <td      class="passed"    >1</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >2</td>
           <td >0</td>
           <td >0</td>
           <td class="total">4</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="2000877400">2s</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="1459985800">1s 459ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -172,14 +172,14 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">src/test/java/feature/userdetails.feature</span>
+  <span class="name">src/test/java/feature/UserdetailsAuthenticationCall.feature</span>
   
 
   </div>
 
-        <div class="description indention">user Details</div>
+        <div class="description indention">Call to token generation feature</div>
 
         <div class="elements inner-level">
                       
@@ -190,12 +190,12 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">007ms</span>
+  <span class="lead-duration duration">1s 459ms</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name"></span>
   
@@ -206,15 +206,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -224,14 +224,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
-  <span class="name">url 'https://reqres.in'</span>
+  <span class="name">url 'https://reqres.in/api/'</span>
   
-  <span class="lead-duration duration">007ms</span>
+  <span class="lead-duration duration">013ms</span>
 
   </div>
 
@@ -246,10 +246,63 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>13:07:30.654 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+        <pre>15:44:05.450 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
       </div>
     </div>
   </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def myFeature = call read('userDetailsAuthenticationTest.feature'){ 'email' = 'eve.holt@reqres.in,  'password' = 'pistol'}</span>
+  
+  <span class="lead-duration duration">1s 446ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>com.intuit.karate.exception.KarateException: -unknown-:5 - net.minidev.json.parser.ParseException: Unexpected character (=) at position 9.</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: -unknown-:5 - net.minidev.json.parser.ParseException: Unexpected character (=) at position 9.</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def authToken = myFeature.accessToken</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
 
         
 
@@ -273,14 +326,14 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">1s 993ms</span>
+  <span class="lead-duration duration">000ms</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">get call test</span>
+  <span class="name">GET call</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -289,15 +342,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details ">
+  <div id="element-5" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -307,91 +360,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path '/api/users?page=2'</span>
-  
-  <span class="lead-duration duration">005ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method GET</span>
-  
-  <span class="lead-duration duration">1s 987ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-  <div class="inner-level">
-    <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>13:07:32.089 request:
-1 &gt; GET https://reqres.in/api/users%3Fpage=2
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_181)
-
-13:07:32.638 response time in milliseconds: 549.51
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; CF-Cache-Status: MISS
-1 &lt; CF-RAY: 5dbe4db2de8fce7f-LHR
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Fri, 02 Oct 2020 12:07:31 GMT
-1 &lt; Etag: W/&quot;301-ijGNEim/mAI7LpbQIXyQc2bjt+k&quot;
-1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?lkg-colo=21&amp;lkg-time=1601640451&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=dd20915e5c348704a84748b999ac083731601640451; expires=Sun, 01-Nov-20 12:07:31 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 058acee3cb0000ce7f62255200000001
-{&quot;page&quot;:1,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;cerulean&quot;,&quot;year&quot;:2000,&quot;color&quot;:&quot;#98B2D1&quot;,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;aqua sky&quot;,&quot;year&quot;:2003,&quot;color&quot;:&quot;#7BC4C4&quot;,&quot;pantone_value&quot;:&quot;14-4811&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;tigerlily&quot;,&quot;year&quot;:2004,&quot;color&quot;:&quot;#E2583E&quot;,&quot;pantone_value&quot;:&quot;17-1456&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;blue turquoise&quot;,&quot;year&quot;:2005,&quot;color&quot;:&quot;#53B0AE&quot;,&quot;pantone_value&quot;:&quot;15-5217&quot;}],&quot;ad&quot;:{&quot;company&quot;:&quot;StatusCode Weekly&quot;,&quot;url&quot;:&quot;http://statuscode.org/&quot;,&quot;text&quot;:&quot;A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.&quot;}}</pre>
-      </div>
-    </div>
-  </div>
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">status 200</span>
+  <span class="name">print 'authToken---',authToken</span>
   
   <span class="lead-duration duration">000ms</span>
 

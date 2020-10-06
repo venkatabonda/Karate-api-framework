@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports  - Feature: src/test/java/feature/GETuserdetails.feature</title>
+<title>Cucumber Reports  - Feature: src/test/java/feature/UserdetailsAuthenticationTest.feature</title>
 
 </head>
 <body>
@@ -127,20 +127,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">src/test/java/feature/GETuserdetails.feature</td>
-                    <td      class="passed"    >9</td>
+          <td class="tagname">src/test/java/feature/UserdetailsAuthenticationTest.feature</td>
+                    <td      class="passed"    >1</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >8</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">9</td>
+          <td class="total">10</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="3459904800">3s 459ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="164876900">164ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -172,14 +172,14 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">src/test/java/feature/GETuserdetails.feature</span>
+  <span class="name">src/test/java/feature/UserdetailsAuthenticationTest.feature</span>
   
 
   </div>
 
-        <div class="description indention">user Details</div>
+        <div class="description indention">API Authetication</div>
 
         <div class="elements inner-level">
                       
@@ -190,7 +190,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">006ms</span>
+  <span class="lead-duration duration">010ms</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -229,9 +229,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
-  <span class="name">url 'https://reqres.in'</span>
+  <span class="name">url 'https://reqres.in/api/'</span>
   
-  <span class="lead-duration duration">006ms</span>
+  <span class="lead-duration duration">010ms</span>
 
   </div>
 
@@ -246,7 +246,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>12:58:08.907 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+        <pre>15:25:57.331 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
       </div>
     </div>
   </div>
@@ -273,14 +273,14 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">3s 453ms</span>
+  <span class="lead-duration duration">154ms</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">get call test</span>
+  <span class="name">Authentication Test</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -289,15 +289,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details ">
+  <div id="element-4" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -307,78 +307,42 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">path '/api/users/2'</span>
+<div class="brief failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def params =</span>
   
-  <span class="lead-duration duration">006ms</span>
+  <span class="lead-duration duration">154ms</span>
 
   </div>
 
         
 
-
-        
-        
-
-        
-
-        
-  
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>com.intuit.karate.exception.KarateException: UserdetailsAuthenticationTest.feature:8 - net.minidev.json.parser.ParseException: Unexpected character (=) at position 8.</a>
       </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method GET</span>
-  
-  <span class="lead-duration duration">2s 761ms</span>
-
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: UserdetailsAuthenticationTest.feature:8 - net.minidev.json.parser.ParseException: Unexpected character (=) at position 8.</pre>
+      </div>
+    </div>
   </div>
-
-        
 
 
         
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
           <a>Doc string</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>12:58:10.816 request:
-1 &gt; GET https://reqres.in/api/users/2
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_181)
-
-12:58:11.518 response time in milliseconds: 679.90
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 1960
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 5dd6f81e5f36e668-LHR
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 05 Oct 2020 11:58:09 GMT
-1 &lt; Etag: W/&quot;173-1Z8bn0V7UjH6FK7NCaza1ccWXQk&quot;
-1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?lkg-colo=21&amp;lkg-time=1601899090&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=dc93f96807e550bebb002879f99e3e0a51601899089; expires=Wed, 04-Nov-20 11:58:09 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 059a3966f70000e668a32fe200000001
-{&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg&quot;},&quot;ad&quot;:{&quot;company&quot;:&quot;StatusCode Weekly&quot;,&quot;url&quot;:&quot;http://statuscode.org/&quot;,&quot;text&quot;:&quot;A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.&quot;}}</pre>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>{ 'mail' = 'eve.holt@reqres.in',
+ 'password' = 'pistol'
+}</pre>
       </div>
     </div>
   </div>
@@ -390,7 +354,91 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">path 'auth/token'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">form field grant_type = 'client credentials'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">form fields params</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
   
@@ -411,11 +459,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">print response</span>
+  <span class="name">print 'response---',response</span>
   
-  <span class="lead-duration duration">026ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -424,29 +472,6 @@ $(document).ready(function() {
 
         
         
-  <div class="inner-level">
-    <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>12:58:11.735 [print] {
-  &quot;ad&quot;: {
-    &quot;company&quot;: &quot;StatusCode Weekly&quot;,
-    &quot;text&quot;: &quot;A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.&quot;,
-    &quot;url&quot;: &quot;http://statuscode.org/&quot;
-  },
-  &quot;data&quot;: {
-    &quot;last_name&quot;: &quot;Weaver&quot;,
-    &quot;id&quot;: 2,
-    &quot;avatar&quot;: &quot;https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg&quot;,
-    &quot;first_name&quot;: &quot;Janet&quot;,
-    &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;
-  }
-}</pre>
-      </div>
-    </div>
-  </div>
 
         
 
@@ -455,11 +480,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">*</span>
-  <span class="name">def expectedOutput = read('../Data/result.json')</span>
+  <span class="name">def accessToken = response.access_token</span>
   
-  <span class="lead-duration duration">641ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -476,53 +501,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response == expectedOutput</span>
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">print 'accessToken---'accessToken</span>
   
-  <span class="lead-duration duration">004ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response.data.id == 2</span>
-  
-  <span class="lead-duration duration">008ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match response.data.last_name != null</span>
-  
-  <span class="lead-duration duration">004ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 

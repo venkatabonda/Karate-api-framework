@@ -12,8 +12,8 @@
   <body>
     <div id="visualization"></div>
     <script>
-var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"UserdetailsAuthenticationCall[1:8]","start":2085,"end":3606,"title":"UserdetailsAuthenticationCall[1:8] 01:00:02.085-01:00:03.606 GET call"}]);
+var groups = new vis.DataSet([]);
+var items = new vis.DataSet([]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });
