@@ -5,12 +5,19 @@ Feature: Create a New user
     * def JsonPayload = read('../Data/PostCreateNewUser.json')
     * headers {Content-Type: 'application/json', Accept: 'application/json',Connection: 'Keep-Alive'}
 
-  Scenario: Post Create a new user
+  Scenario: Post Create a new user using jsonfile
   Given path '/api/users'
     And request JsonPayload
 #    And headers {Content-Type: 'application/json', Accept: 'application/json',Connection: 'Keep-Alive'}
   When method POST
   Then status 201
+    Then print 'response---',response
+
+  Scenario: Post Create a new user with harcoded data
+    Given path '/api/users'
+    And request {"name": "sumac","job": "lead"}
+    When method POST
+    Then status 201
     Then print 'response---',response
 
 

@@ -3,7 +3,7 @@ Feature: Get all user Details
 
   Background:
     * url 'https://reqres.in'
-    * def expectedOutput = read('../Data/MultipleResults.json
+    * def expectedOutput = read('../Data/MultipleResults.json')
     """
     function(secounds){
     for (i=0; i <= secounds; i++)

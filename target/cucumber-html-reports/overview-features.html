@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                21,
-                3,
-                15,
+                74,
+                5,
+                25,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 39) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 104) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                3,
-                3
+                8,
+                5
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 6) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 13) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   3,
-                   1
+                   6,
+                   3
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>KarateDemo</td>
-            <td>05 Oct 2020, 14:02</td>
+            <td>06 Oct 2020, 15:42</td>
     </tr>
   </tbody>
 </table>
@@ -327,7 +327,58 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-feature_src-test-java-feature-GETMultipleUserDetails-feature.html">src/test/java/feature/GETMultipleUserDetails.feature</a></td>
+        <td class="tagname"><a href="report-feature_src-test-java-feature-DataDriven-feature.html">src/test/java/feature/DataDriven.feature</a></td>
+        
+        <td      class="passed"    >11</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">11</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="4077649800">4s 077ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_src-test-java-feature-GetAllUsers-feature_1.html">src/test/java/feature/GetAllUsers.feature</a></td>
+        
+        <td      class="passed"    >27</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">27</td>
+
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="3490105300">3s 490ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_src-test-java-feature-Getcall-feature_2.html">src/test/java/feature/Getcall.feature</a></td>
+        
+        <td      class="passed"    >10</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">10</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="2199002000">2s 199ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_src-test-java-feature-GETMultipleUserDetails-feature_3.html">src/test/java/feature/GETMultipleUserDetails.feature</a></td>
         
         <td      class="passed"    >3</td>
         <td      class="failed"    >3</td>
@@ -340,11 +391,11 @@ $(document).ready(function() {
         <td  class="failed"    >3</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="987664900">987ms</td>
+        <td class="duration" data-value="9332500">009ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_src-test-java-feature-GETuserdetails-feature_1.html">src/test/java/feature/GETuserdetails.feature</a></td>
+        <td class="tagname"><a href="report-feature_src-test-java-feature-GETuserdetails-feature_4.html">src/test/java/feature/GETuserdetails.feature</a></td>
         
         <td      class="passed"    >9</td>
         <td >0</td>
@@ -361,24 +412,24 @@ $(document).ready(function() {
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_src-test-java-feature-PostCreateNewUser-feature_2.html">src/test/java/feature/PostCreateNewUser.feature</a></td>
+        <td class="tagname"><a href="report-feature_src-test-java-feature-PostCreateNewUser-feature_5.html">src/test/java/feature/PostCreateNewUser.feature</a></td>
         
-        <td      class="passed"    >5</td>
+        <td      class="passed"    >8</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">5</td>
+        <td class="total">8</td>
 
         <td  class="passed"    >1</td>
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2080721900">2s 080ms</td>
+        <td class="duration" data-value="3828103800">3s 828ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_src-test-java-feature-userdetails-feature_3.html">src/test/java/feature/userdetails.feature</a></td>
+        <td class="tagname"><a href="report-feature_src-test-java-feature-userdetails-feature_6.html">src/test/java/feature/userdetails.feature</a></td>
         
         <td      class="passed"    >4</td>
         <td >0</td>
@@ -394,38 +445,72 @@ $(document).ready(function() {
         <td class="duration" data-value="2000877400">2s</td>
         <td class="passed">Passed</td>
       </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_src-test-java-feature-UserdetailsAuthenticationCall-feature_7.html">src/test/java/feature/UserdetailsAuthenticationCall.feature</a></td>
+        
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="1459985800">1s 459ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_src-test-java-feature-UserdetailsAuthenticationTest-feature_8.html">src/test/java/feature/UserdetailsAuthenticationTest.feature</a></td>
+        
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">10</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="164876900">164ms</td>
+        <td class="failed">Failed</td>
+      </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>4</td>
-            <td>21</td>
-      <td>3</td>
-      <td>15</td>
+      <td>9</td>
+            <td>74</td>
+      <td>5</td>
+      <td>25</td>
       <td>0</td>
       <td>0</td>
-      <td>39</td>
+      <td>104</td>
 
-      <td>3</td>
-      <td>3</td>
-      <td>6</td>
+      <td>8</td>
+      <td>5</td>
+      <td>13</td>
 
-      <td class="duration">8s 529ms</td>
+      <td class="duration">20s 689ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>53.85%</td>
-      <td>7.69%</td>
+            <td>71.15%</td>
+      <td>4.81%</td>
+      <td>24.04%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td>61.54%</td>
       <td>38.46%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td></td>
-      <td>50.00%</td>
-      <td>50.00%</td>
       <td></td>
       <td></td>
-      <td>75.00%</td>
+      <td>66.67%</td>
     </tr>
   </tfoot>
 </table>
