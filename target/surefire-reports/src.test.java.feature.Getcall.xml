@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/java/feature/Getcall.feature" skipped="0" tests="1" time="2.199002">
+  <testcase classname="src.test.java.feature.Getcall" name="GET request user 1 details" time="2.199002">
+    <system-out>* url 'https://reqres.in' ................................................. passed
+Given path '/api/users/1' ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def myfun = function(){return 'hello'} .................................. passed
+* def returnedDate = call myfun ........................................... passed
+Then print 'returnedData---',returnedData ................................. passed
+* def myfun2 = ............................................................ passed
+* def returnedDate2 = call myfun2 ......................................... passed
+Then print 'returnedData2---',returnedData2 ............................... passed</system-out>
+  </testcase>
+</testsuite>

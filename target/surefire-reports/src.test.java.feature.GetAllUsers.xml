@@ -1,0 +1,62 @@
+<testsuite failures="0" name="src/test/java/feature/GetAllUsers.feature" skipped="0" tests="3" time="3.490105">
+  <testcase classname="src.test.java.feature.GetAllUsers" name="GET all users details" time="3.088466">
+    <system-out>* def expectedOutput = read('../Data/result.json') ........................ passed
+Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+Then print  'data---',data ................................................ passed
+* def myFun = ............................................................. passed
+* def numberOfUsers = call myFun data ..................................... passed
+Then print 'numberOfUsers---',numberOfUsers ............................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.feature.GetAllUsers" name="GET request users id details" time="0.162328">
+    <system-out>* def expectedOutput = read('../Data/result.json') ........................ passed
+Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+Then print  'data---',data ................................................ passed
+* def myFun = ............................................................. passed
+* def numberOfUsers = call myFun data ..................................... passed
+Then print 'numberOfUsers---',numberOfUsers ............................... passed
+* def expectedOutput = read('../Data/result.json') ........................ passed
+Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+Then print  'data---',data ................................................ passed
+* def myFun = ............................................................. passed
+* def userDetails = call myFun data ....................................... passed
+Then print 'userDetails---',userDetails ................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.feature.GetAllUsers" name="GET request users id details of 9th person" time="0.239312">
+    <system-out>* def expectedOutput = read('../Data/result.json') ........................ passed
+Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+Then print  'data---',data ................................................ passed
+* def myFun = ............................................................. passed
+* def numberOfUsers = call myFun data ..................................... passed
+Then print 'numberOfUsers---',numberOfUsers ............................... passed
+* def expectedOutput = read('../Data/result.json') ........................ passed
+Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+Then print  'data---',data ................................................ passed
+* def myFun = ............................................................. passed
+* def userDetails = call myFun data ....................................... passed
+Then print 'userDetails---',userDetails ................................... passed
+* def expectedOutput = read('../Data/result.json') ........................ passed
+Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+Then print  'data---',data ................................................ passed
+* def myFun = ............................................................. passed
+* def userDetails = call myFun data ....................................... passed
+Then print 'userDetails---',userDetails ................................... passed</system-out>
+  </testcase>
+</testsuite>

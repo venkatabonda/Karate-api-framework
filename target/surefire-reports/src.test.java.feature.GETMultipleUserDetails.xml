@@ -1,12 +1,11 @@
-<testsuite failures="3" name="src/test/java/feature/GETMultipleUserDetails.feature" skipped="0" tests="3" time="0.987665">
-  <testcase classname="src.test.java.feature.GETMultipleUserDetails" name="GET request user 1 details" time="0.937729">
-    <failure message="-unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token &quot; at position 1377.&#10;stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)">* url 'https://reqres.in' ................................................. passed
+<testsuite failures="3" name="src/test/java/feature/GETMultipleUserDetails.feature" skipped="0" tests="3" time="0.009333">
+  <testcase classname="src.test.java.feature.GETMultipleUserDetails" name="GET request user 1 details" time="0.004402">
+    <failure message="-unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')">* url 'https://reqres.in' ................................................. passed
 * def expectedOutput = read('../Data/MultipleResults.json') ............... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: -unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token " at position 1377.
-stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)&#13;
-	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:5)&#13;
+com.intuit.karate.exception.KarateException: -unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')&#13;
+	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:6)&#13;
 
 Given path '/api/users/1' ................................................. skipped
 When method GET ........................................................... skipped
@@ -14,14 +13,13 @@ Then status 200 ........................................................... skip
 Then print response ....................................................... skipped
 And match response == expectedOutput[0] ................................... skipped</failure>
   </testcase>
-  <testcase classname="src.test.java.feature.GETMultipleUserDetails" name="GET request user 2 details" time="0.011052">
-    <failure message="-unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token &quot; at position 1377.&#10;stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)">* url 'https://reqres.in' ................................................. passed
+  <testcase classname="src.test.java.feature.GETMultipleUserDetails" name="GET request user 2 details" time="0.004403">
+    <failure message="-unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')">* url 'https://reqres.in' ................................................. passed
 * def expectedOutput = read('../Data/MultipleResults.json') ............... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: -unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token " at position 1377.
-stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)&#13;
-	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:5)&#13;
+com.intuit.karate.exception.KarateException: -unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')&#13;
+	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:6)&#13;
 
 Given path '/api/users/1' ................................................. skipped
 When method GET ........................................................... skipped
@@ -32,9 +30,8 @@ And match response == expectedOutput[0] ................................... skip
 * def expectedOutput = read('../Data/MultipleResults.json') ............... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: -unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token " at position 1377.
-stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)&#13;
-	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:5)&#13;
+com.intuit.karate.exception.KarateException: -unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')&#13;
+	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:6)&#13;
 
 Given path '/api/users/2' ................................................. skipped
 When method GET ........................................................... skipped
@@ -42,14 +39,13 @@ Then status 200 ........................................................... skip
 Then print response ....................................................... skipped
 And match response == expectedOutput[1] ................................... skipped</failure>
   </testcase>
-  <testcase classname="src.test.java.feature.GETMultipleUserDetails" name="GET request user 3 details" time="0.038884">
-    <failure message="-unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token &quot; at position 1377.&#10;stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)">* url 'https://reqres.in' ................................................. passed
+  <testcase classname="src.test.java.feature.GETMultipleUserDetails" name="GET request user 3 details" time="0.000527">
+    <failure message="-unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')">* url 'https://reqres.in' ................................................. passed
 * def expectedOutput = read('../Data/MultipleResults.json') ............... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: -unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token " at position 1377.
-stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)&#13;
-	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:5)&#13;
+com.intuit.karate.exception.KarateException: -unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')&#13;
+	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:6)&#13;
 
 Given path '/api/users/1' ................................................. skipped
 When method GET ........................................................... skipped
@@ -60,9 +56,8 @@ And match response == expectedOutput[0] ................................... skip
 * def expectedOutput = read('../Data/MultipleResults.json') ............... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: -unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token " at position 1377.
-stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)&#13;
-	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:5)&#13;
+com.intuit.karate.exception.KarateException: -unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')&#13;
+	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:6)&#13;
 
 Given path '/api/users/2' ................................................. skipped
 When method GET ........................................................... skipped
@@ -73,9 +68,8 @@ And match response == expectedOutput[1] ................................... skip
 * def expectedOutput = read('../Data/MultipleResults.json') ............... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: -unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token " at position 1377.
-stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)&#13;
-	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:5)&#13;
+com.intuit.karate.exception.KarateException: -unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')&#13;
+	at ✽.* def expectedOutput = read('../Data/MultipleResults.json') (-unknown-:6)&#13;
 
 Given path '/api/users/3' ................................................. skipped
 When method GET ........................................................... skipped

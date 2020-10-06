@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/java/feature/DataDriven.feature" skipped="0" tests="1" time="4.07765">
+  <testcase classname="src.test.java.feature.DataDriven" name="Data driven" time="4.07765">
+    <system-out>* url 'http://dummy.restapiexample.com/' .................................. passed
+Given path 'api/v1/create' ................................................ passed
+And request {"name":test,"salary":2000,"age":20} .......................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+Then print 'response--1-',response ........................................ passed
+* def result = response ................................................... passed
+Given path 'api/v1/employee/'+ result.data.id ............................. passed
+And method GET ............................................................ passed
+Then status 200 ........................................................... passed
+Then print 'response--2-',response ........................................ passed</system-out>
+  </testcase>
+</testsuite>

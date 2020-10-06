@@ -47,17 +47,17 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2020-10-05 10:49:27 AM</div>        
+<div id="nav-date">2020-10-06 03:05:03 PM</div>        
       
 <div class="nav-container">
 <div class="nav-item failed">
-<a href="#[1:6]">[1:6] GET request user 1 details </a>
+<a href="#[1:15]">[1:15] GET request user 1 details </a>
 </div>
 <div class="nav-item failed">
-<a href="#[2:14]">[2:14] GET request user 2 details </a>
+<a href="#[2:23]">[2:23] GET request user 2 details </a>
 </div>
 <div class="nav-item failed">
-<a href="#[3:21]">[3:21] GET request user 3 details </a>
+<a href="#[3:31]">[3:31] GET request user 3 details </a>
 </div>
 </div>
 </div>
@@ -68,37 +68,41 @@
 <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/feature/GETMultipleUserDetails.feature</span><span class="feature-description">Get all user Details</span>
 </div>
 <div class="scenario">
-<div class="scenario-heading" id="[1:6]">
+<div class="scenario-heading" id="[1:15]">
 <div class="heading-container">
 <div class="scenario-tags"></div>
-<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">GET request user 1 details </span>
+<span class="scenario-keyword">Scenario: [1:15]</span><span class="scenario-name">GET request user 1 details </span>
 </div>
-<div class="scenario-time failed">ms: 938</div>
+<div class="scenario-time failed">ms: 4</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="[1:6]bg">
+<div class="step-container" id="[1:15]bg">
 <div class="step-ref bg-step">&gt;&gt;</div>
 <div class="step-cell passed">Background:</div>
 </div>
 <div class="time-cell passed"></div>
 </div>
-<div class="step-row" data-parent="[1:6]bg">
+<div class="step-row" data-parent="[1:15]bg">
 <div class="step-container" id="1">
 <div class="step-ref bg-step">1</div>
 <div class="step-cell passed">* url 'https://reqres.in'</div>
 </div>
-<div class="time-cell passed">7</div>
+<div class="time-cell passed">4</div>
 </div>
-<div class="preformatted" data-parent="1">10:49:26.450 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row" data-parent="[1:6]bg">
+<div class="preformatted" data-parent="1">15:05:03.425 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[1:15]bg">
 <div class="step-container" id="2">
 <div class="step-ref bg-step">2</div>
 <div class="step-cell failed">* def expectedOutput = read('../Data/MultipleResults.json')</div>
 </div>
-<div class="time-cell failed">931</div>
+<div class="time-cell failed">0</div>
 </div>
-<div class="preformatted" data-parent="2">-unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token " at position 1377.
-stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)</div>
+<div class="preformatted" data-parent="2">function(secounds){
+for (i=0; i &lt;= secounds; i++)
+{ java.lang.Thread.sleep(1*1000);
+}
+}
+-unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')</div>
 <div class="step-row">
 <div class="step-container" id="3">
 <div class="step-ref skipped">3</div>
@@ -128,13 +132,6 @@ stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJ
 <div class="time-cell skipped">0</div>
 </div>
 <div class="step-row">
-<div class="step-container">
-<div class="step-ref skipped"></div>
-<div class="step-cell comment">#  And match response == {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}} 13:36:07.968 [ForkJoinPool-1-worker-1] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $ 13:36:07.968 [ForkJoinPool-1-worker-1] INFO com.intuit.karate - [print] { "ad": { "company": "StatusCode Weekly", "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.", "url": "http://statuscode.org/" }, "data": { "last_name": "Weaver", "id": 2, "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg", "first_name": "Janet", "email": "janet.weaver@reqres.in" } }</div>
-</div>
-<div class="time-cell comment"></div>
-</div>
-<div class="step-row">
 <div class="step-container" id="7">
 <div class="step-ref skipped">7</div>
 <div class="step-cell skipped">And match response == expectedOutput[0]</div>
@@ -143,37 +140,43 @@ stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJ
 </div>
 </div>
 <div class="scenario">
-<div class="scenario-heading" id="[2:14]">
+<div class="scenario-heading" id="[2:23]">
 <div class="heading-container">
-<div class="scenario-tags"></div>
-<span class="scenario-keyword">Scenario: [2:14]</span><span class="scenario-name">GET request user 2 details </span>
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">parallel=false</a>
 </div>
-<div class="scenario-time failed">ms: 11</div>
+<span class="scenario-keyword">Scenario: [2:23]</span><span class="scenario-name">GET request user 2 details </span>
+</div>
+<div class="scenario-time failed">ms: 4</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="[2:14]bg">
+<div class="step-container" id="[2:23]bg">
 <div class="step-ref bg-step">&gt;&gt;</div>
 <div class="step-cell passed">Background:</div>
 </div>
 <div class="time-cell passed"></div>
 </div>
-<div class="step-row" data-parent="[2:14]bg">
+<div class="step-row" data-parent="[2:23]bg">
 <div class="step-container" id="8">
 <div class="step-ref bg-step">8</div>
 <div class="step-cell passed">* url 'https://reqres.in'</div>
 </div>
-<div class="time-cell passed">1</div>
+<div class="time-cell passed">4</div>
 </div>
-<div class="preformatted" data-parent="8">10:49:27.469 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row" data-parent="[2:14]bg">
+<div class="preformatted" data-parent="8">15:05:03.425 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[2:23]bg">
 <div class="step-container" id="9">
 <div class="step-ref bg-step">9</div>
 <div class="step-cell failed">* def expectedOutput = read('../Data/MultipleResults.json')</div>
 </div>
-<div class="time-cell failed">10</div>
+<div class="time-cell failed">0</div>
 </div>
-<div class="preformatted" data-parent="9">-unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token " at position 1377.
-stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)</div>
+<div class="preformatted" data-parent="9">function(secounds){
+for (i=0; i &lt;= secounds; i++)
+{ java.lang.Thread.sleep(1*1000);
+}
+}
+-unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')</div>
 <div class="step-row">
 <div class="step-container" id="10">
 <div class="step-ref skipped">10</div>
@@ -211,37 +214,43 @@ stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJ
 </div>
 </div>
 <div class="scenario">
-<div class="scenario-heading" id="[3:21]">
+<div class="scenario-heading" id="[3:31]">
 <div class="heading-container">
-<div class="scenario-tags"></div>
-<span class="scenario-keyword">Scenario: [3:21]</span><span class="scenario-name">GET request user 3 details </span>
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">parallel=false</a>
 </div>
-<div class="scenario-time failed">ms: 39</div>
+<span class="scenario-keyword">Scenario: [3:31]</span><span class="scenario-name">GET request user 3 details </span>
+</div>
+<div class="scenario-time failed">ms: 1</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="[3:21]bg">
+<div class="step-container" id="[3:31]bg">
 <div class="step-ref bg-step">&gt;&gt;</div>
 <div class="step-cell passed">Background:</div>
 </div>
 <div class="time-cell passed"></div>
 </div>
-<div class="step-row" data-parent="[3:21]bg">
+<div class="step-row" data-parent="[3:31]bg">
 <div class="step-container" id="15">
 <div class="step-ref bg-step">15</div>
 <div class="step-cell passed">* url 'https://reqres.in'</div>
 </div>
-<div class="time-cell passed">0</div>
+<div class="time-cell passed">1</div>
 </div>
-<div class="preformatted" data-parent="15">10:49:27.508 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row" data-parent="[3:21]bg">
+<div class="preformatted" data-parent="15">15:05:03.495 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row" data-parent="[3:31]bg">
 <div class="step-container" id="16">
 <div class="step-ref bg-step">16</div>
 <div class="step-cell failed">* def expectedOutput = read('../Data/MultipleResults.json')</div>
 </div>
-<div class="time-cell failed">39</div>
+<div class="time-cell failed">0</div>
 </div>
-<div class="preformatted" data-parent="16">-unknown-:5 - evaluation (js) failed: read('../Data/MultipleResults.json'), com.jayway.jsonpath.InvalidJsonException: net.minidev.json.parser.ParseException: Unexpected token " at position 1377.
-stack trace: com.jayway.jsonpath.spi.json.JsonSmartJsonProvider.parse(JsonSmartJsonProvider.java:64)</div>
+<div class="preformatted" data-parent="16">function(secounds){
+for (i=0; i &lt;= secounds; i++)
+{ java.lang.Thread.sleep(1*1000);
+}
+}
+-unknown-:6 - no step-definition method match found for: def expectedOutput = read('../Data/MultipleResults.json')</div>
 <div class="step-row">
 <div class="step-container" id="17">
 <div class="step-ref skipped">17</div>
