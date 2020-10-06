@@ -1,0 +1,13 @@
+<testsuite failures="1" name="src/test/java/feature/UserdetailsAuthenticationCall.feature" skipped="0" tests="1" time="1.459986">
+  <testcase classname="src.test.java.feature.UserdetailsAuthenticationCall" name="GET call" time="1.459986">
+    <failure message="-unknown-:5 - net.minidev.json.parser.ParseException: Unexpected character (=) at position 9.">* url 'https://reqres.in/api/' ............................................ passed
+* def myFeature = call read('userDetailsAuthenticationTest.feature'){ 'email' = 'eve.holt@reqres.in,  'password' = 'pistol'} . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:5 - net.minidev.json.parser.ParseException: Unexpected character (=) at position 9.&#13;
+	at ✽.* def myFeature = call read('userDetailsAuthenticationTest.feature'){ 'email' = 'eve.holt@reqres.in,  'password' = 'pistol'} (-unknown-:5)&#13;
+
+* def authToken = myFeature.accessToken ................................... skipped
+Then print 'authToken---',authToken ....................................... skipped</failure>
+  </testcase>
+</testsuite>

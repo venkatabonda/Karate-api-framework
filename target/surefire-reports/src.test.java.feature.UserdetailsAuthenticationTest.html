@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.feature.UserdetailsAuthenticationTest</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-10-05 03:25:57 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1:7]">[1:7] Authentication Test </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/feature/UserdetailsAuthenticationTest.feature</span><span class="feature-description">API Authetication</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:7]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Authentication Test </span>
+</div>
+<div class="scenario-time failed">ms: 165</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:7]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://reqres.in/api/'</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="preformatted" data-parent="1">15:25:57.331 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref failed">2</div>
+<div class="step-cell failed">* def params =</div>
+</div>
+<div class="time-cell failed">154</div>
+</div>
+<div class="preformatted" data-parent="2">{ 'mail' = 'eve.holt@reqres.in',
+ 'password' = 'pistol'
+}
+UserdetailsAuthenticationTest.feature:8 - net.minidev.json.parser.ParseException: Unexpected character (=) at position 8.</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref skipped">3</div>
+<div class="step-cell skipped">When path 'auth/token'</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref skipped">4</div>
+<div class="step-cell skipped">And form field grant_type = 'client credentials'</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref skipped">5</div>
+<div class="step-cell skipped">And form fields params</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref skipped">6</div>
+<div class="step-cell skipped">When method POST</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref skipped">7</div>
+<div class="step-cell skipped">Then status 200</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref skipped">8</div>
+<div class="step-cell skipped">Then print 'response---',response</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref skipped">9</div>
+<div class="step-cell skipped">* def accessToken = response.access_token</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref skipped">10</div>
+<div class="step-cell skipped">Then print 'accessToken---'accessToken</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

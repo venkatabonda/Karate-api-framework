@@ -1,0 +1,8 @@
+<testsuite failures="0" name="src/test/java/feature/userdetails.feature" skipped="0" tests="1" time="2.000877">
+  <testcase classname="src.test.java.feature.userdetails" name="get call test" time="2.000877">
+    <system-out>* url 'https://reqres.in' ................................................. passed
+Given path '/api/users?page=2' ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

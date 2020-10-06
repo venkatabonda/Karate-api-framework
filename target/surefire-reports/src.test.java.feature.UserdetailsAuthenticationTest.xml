@@ -1,0 +1,19 @@
+<testsuite failures="1" name="src/test/java/feature/UserdetailsAuthenticationTest.feature" skipped="0" tests="1" time="0.164877">
+  <testcase classname="src.test.java.feature.UserdetailsAuthenticationTest" name="Authentication Test" time="0.164877">
+    <failure message="UserdetailsAuthenticationTest.feature:8 - net.minidev.json.parser.ParseException: Unexpected character (=) at position 8.">* url 'https://reqres.in/api/' ............................................ passed
+* def params = ............................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: UserdetailsAuthenticationTest.feature:8 - net.minidev.json.parser.ParseException: Unexpected character (=) at position 8.&#13;
+	at ✽.* def params = (UserdetailsAuthenticationTest.feature:8)&#13;
+
+When path 'auth/token' .................................................... skipped
+And form field grant_type = 'client credentials' .......................... skipped
+And form fields params .................................................... skipped
+When method POST .......................................................... skipped
+Then status 200 ........................................................... skipped
+Then print 'response---',response ......................................... skipped
+* def accessToken = response.access_token ................................. skipped
+Then print 'accessToken---'accessToken .................................... skipped</failure>
+  </testcase>
+</testsuite>

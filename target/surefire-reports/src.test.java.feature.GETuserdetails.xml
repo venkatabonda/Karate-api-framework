@@ -1,0 +1,13 @@
+<testsuite failures="0" name="src/test/java/feature/GETuserdetails.feature" skipped="0" tests="1" time="3.459905">
+  <testcase classname="src.test.java.feature.GETuserdetails" name="get call test" time="3.459905">
+    <system-out>* url 'https://reqres.in' ................................................. passed
+Given path '/api/users/2' ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+* def expectedOutput = read('../Data/result.json') ........................ passed
+And match response == expectedOutput ...................................... passed
+And match response.data.id == 2 ........................................... passed
+And match response.data.last_name != null ................................. passed</system-out>
+  </testcase>
+</testsuite>
